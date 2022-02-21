@@ -1,0 +1,169 @@
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+
+/* common styles / base styles / utilities */
+
+body{
+    /* font-family: 'Poppins', sans-serif;
+    color:#3A3A3A; */
+
+    margin-top: 20px;
+}
+
+
+
+
+
+.link-button{
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: white;
+
+    background-image: linear-gradient(#E02C6D,#b60244);
+    border-radius: 41px;
+
+    margin-top: 100px;
+    padding: 10px 24px;
+}
+
+.half-width{
+    width: 50%;
+}
+
+
+
+
+
+/* ------------------------------------------------------------      
+            Header & Nav style 
+------------------------------------------------------------ */
+
+nav{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* navPortion_1 */
+
+#navPortion_1 li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    color:#3A3A3A;
+}
+
+#navPortion_1 ul li:hover{
+    transform: scale(1.1);
+    
+    transition: transform 0.75s ease-out;
+}
+
+
+
+/* navPortion_2 */
+
+#navPortion_2 ul li{
+    margin-right: 34px;
+}
+#navPortion_2 li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color:#3A3A3A;
+}
+
+#navPortion_2 ul li:hover{
+    background-color: rgba(211, 211, 211, 0.137);
+    border-radius: 10px;
+
+    padding: 0 10px;
+
+    transition: padding 1s ease-out;
+}
+
+
+
+
+
+/* ------------------------------------------------------------      
+            1st Section : Prebook 
+------------------------------------------------------------ */
+
+.prebook{
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+/* prebook_info */
+
+.prebook_info h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;  
+    font-size: 52px;
+    line-height: 70px;
+   
+    margin-bottom: 0;
+
+    color: #3A3A3A;
+}
+.prebook_info p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: justify;
+
+    margin-top: 15px ;
+    margin-bottom: 35px;
+        
+    color: #3A3A3A;
+}
+
+
+
+/* prebook_img */
+
+.prebook_img img{
+    width: 420px;
+}
+
+
+
+#prebook_img_1 img{
+    position: absolute;
+}
