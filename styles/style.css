@@ -226,3 +226,17 @@ hr{
     
     transition: transform 0.4s ease-out , padding .4s ease-out;
 }
+
+
+
+
+
+/* ------------------------------------------------------------      
+            3rd Section : PopularCollection
+------------------------------------------------------------ */
+
+.products{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr); 
+}
