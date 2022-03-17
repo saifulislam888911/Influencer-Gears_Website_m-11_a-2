@@ -30,6 +30,14 @@ body{
     padding-bottom: 25px;
 }
 
+.half-width{
+    width: 50%;
+}
+
+
+
+
+
 .link-button{
     text-decoration: none;
 
@@ -43,7 +51,7 @@ body{
     background-image: linear-gradient(#E02C6D,#b60244);
     border-radius: 41px;
 
-    /* margin-top: 100px;   [ X-PROB : this line does not work. */
+    /* margin-top: 100px;   [ Q?-PROB : this line does not work. */
     padding: 10px 24px;
 }
 
@@ -53,8 +61,36 @@ body{
     transition: padding .4s ease-out;
 }
 
-.half-width{
-    width: 50%;
+.addcart-button{
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    color:#3A3A3A;
+
+    background-image: linear-gradient(#FED54A,#FF9347);
+    border-radius: 30px;
+
+    padding: 5px 10px;
+}
+
+.buy-button{
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    color:#3A3A3A;
+
+    background-image: linear-gradient(#EFF54D, #00AC61);
+    border-radius: 30px;
+
+    padding: 5px 10px;
 }
 
 
@@ -272,7 +308,37 @@ hr{
 }
 
 .product:hover .product-banner img{
-    transform: scale(1.18);
+    transform: scale(1.2);
 
     transition: transform 1s ease-in-out;
+}
+
+.product-purchase {
+    position: absolute;
+
+    display: none;
+    
+    width: 100%;
+
+    background-color: #9e8b9dcb;
+    border-radius: 10px;
+
+    padding: 0px;   
+    
+    top: 195.125px;
+}
+.product-purchase a{
+    margin-left: 27.5px;   /* [ Q?-PROB : unable to reduce the gap, because the button , purchase part pading extending the width of product-purchase class.] */
+}
+
+.product:hover .product-purchase{
+    display: block;
+
+    opacity: 0.8;
+}
+
+.product-purchase a:hover{
+    color: #FFFFFF;
+   
+    opacity: 1;   /* [ Q?-PROB : Does not apply on the button opacity color.] */
 }
