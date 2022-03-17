@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 
 
@@ -74,7 +78,7 @@ body{
     background-image: linear-gradient(#FED54A,#FF9347);
     border-radius: 30px;
 
-    padding: 5px 10px;
+    padding: 0px 9px;
 }
 
 .buy-button{
@@ -90,7 +94,25 @@ body{
     background-image: linear-gradient(#EFF54D, #00AC61);
     border-radius: 30px;
 
-    padding: 5px 10px;
+    padding: 0px 9px;
+}
+
+.addwishlist-button{
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    color:#3A3A3A;
+
+    background-image: linear-gradient(#FED54A,#FF9347);
+    border-radius: 30px;
+
+    padding: 0px 9px;
+
+        /* [ Q?-PROB : can not assign margin and align the button placement.] */
 }
 
 
@@ -293,6 +315,10 @@ hr{
     padding: 3%; 
 }
 
+
+
+/* product-banner 's image align , css and transition */
+
 .product-banner{
     position: relative;
 
@@ -313,6 +339,8 @@ hr{
     transition: transform 1s ease-in-out;
 }
 
+/* product-banner 's inside floating part adding */
+
 .product-purchase {
     position: absolute;
 
@@ -328,7 +356,7 @@ hr{
     top: 195.125px;
 }
 .product-purchase a{
-    margin-left: 27.5px;   /* [ Q?-PROB : unable to reduce the gap, because the button , purchase part pading extending the width of product-purchase class.] */
+    margin-left: 19.654px;   /* [ Q?-PROB : unable to reduce the middle gap, because the button , purchase part pading extending the width of product-purchase class.] */
 }
 
 .product:hover .product-purchase{
@@ -342,3 +370,96 @@ hr{
    
     opacity: 1;   /* [ Q?-PROB : Does not apply on the button opacity color.] */
 }
+
+
+
+/* product-detail fonts */
+
+.product-detail .product-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    /* line-height: 40px; */
+
+    color: #18191F;
+
+    margin: 0px;
+}
+
+.product-detail .product-price{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;   
+    /* line-height: 150%;   [note : identical to box height, or 36px] */
+
+    color: rgba(0, 0, 0, 0.87);
+
+    margin: 0px;
+}
+
+.yellow-star{
+    color: #FB8200;
+}
+
+.product-review{
+    margin: 0px;
+}
+.product-review .product-rating{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 22px;   [note : identical to box height, or 157%] */
+
+    letter-spacing: 1.5px;
+
+    color:#5E6366;;
+
+    padding: 0px 5px;
+}
+
+.product-info .product-shipping{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 143%;   [note : or 20px] */
+
+    color: #787885;
+
+    margin: 0px;
+}
+
+.product-info .product-stock{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 143%;   [note : or 20px] */
+
+    color: #787885;
+
+    margin: 0px;
+}
+.product-available{
+    color: #32c27f;
+}
+.product-unavailable{
+    color: #c7546d;
+}
+
+.product-info .product-protection{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 143%;   [note : or 20px] */
+
+    color: #787885;
+
+    margin: 0px;
+}
+
+
