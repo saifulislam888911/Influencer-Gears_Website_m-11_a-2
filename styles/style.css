@@ -310,6 +310,28 @@ hr{
             3rd Section : PopularCollection
 ------------------------------------------------------------ */
 
+.sectiontitle-popularcollection{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.sectiontitle-popularcollection h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+
+    color: #3A3A3A;
+
+    margin-top: 0px;
+}
+
+
+
+/* .......... products start .......... */
+
 .products{
     display: grid;
 
@@ -473,4 +495,27 @@ hr{
     color: #787885;
 
     margin: 0px;
+}
+
+ /* __________ products end __________ */
+
+
+
+.seemore-popularcollection{
+    display: flex;
+
+    justify-content: end;
+
+    margin: 0px 105px 36px 105px;
+}
+.seemore-popularcollection a{
+    text-decoration: none;
+
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(224, 44, 109, 0.87);
 }
