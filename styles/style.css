@@ -130,6 +130,22 @@ main{
 
 
 
+/* .......... Fonts (fonts related : class) .......... */
+
+.NoteToBeTaken{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 22px;   /* [note : identical to box height, or 157%] */
+
+    letter-spacing: 1.5px;
+
+    color: #787885;
+}
+
+
+
 /* .......... Icon (Icons related : class) .......... */
 
 .bigger-icon{
@@ -140,7 +156,7 @@ main{
 
 
 
-/* .......... Color (Icons related : class) .......... */
+/* .......... Color (Colors related : class) .......... */
 
 .yellow-star{
     color: #FB8200;
@@ -480,7 +496,7 @@ hr{
 
     letter-spacing: 1.5px;
 
-    color:#5E6366;;
+    color:#5E6366;
 
     padding: 0px 5px;
 }
@@ -521,7 +537,7 @@ hr{
     margin: 0px;
 }
 
- /* __________ products end __________ */
+/* __________ products end __________ */
 
 
 
@@ -609,7 +625,89 @@ hr{
             Foooter
 ------------------------------------------------------------ */
 
-footer{
+/* ------------------------------------------------------------      
+            1st Footer-Section : footer-company-info & footer-menu
+------------------------------------------------------------ */
+
+/* .......... footer-company-info start .......... */
+
+.footer-company-info{
+    background: #1505f533;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+/* .......... footer-subscribe-panel .......... */
+
+.footer-subscribe-panel{
+    display: flex;
+
+    justify-content: center;
+}
+
+
+
+/* .......... footer-subscribe-form .......... */
+
+.footer-subscribe-form{
+    border:2px solid rgba(245, 245, 245, 0.349);
+    border-radius: 10px;
+
+    text-align: center; 
+
+    padding: 20px 50px; 
+}
+.footer-subscribe-form h2{
+    font-family: 'Poppins', sans-serif;
+
+    color:#3A3A3A;
+}
+.footer-subscribe-form p{
+    font-family: 'Poppins', sans-serif;
+
+    color: #6C6C6C;
+}
+.footer-subscribe-form input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+
+    color:#3A3A3A;
+
+    border: 1px solid rgba(172, 255, 47, 0.596);
+    border-radius: 5px;
+
+    padding-left: 10px;
+
+    margin-top: 15px;
+}
+.footer-subscribe-form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+
+    color: whitesmoke;
+
+    background-image: linear-gradient(#538FFB,#5B54FA);
+    border: 0px;
+    border-radius: 10px;
+}
+
+/* __________ footer-company-info end __________ */
+
+
+
+
+
+/* ------------------------------------------------------------      
+            2nd Footer-Section : footer-Endpart
+------------------------------------------------------------ */
+
+/* .......... footer-Endpart start .......... */
+
+.footer-Endpart{
     display: flex;
 
     flex-direction: column;
@@ -626,9 +724,9 @@ footer{
 
 
 
-/* .......... footer-info  .......... */
+/* .......... footer-company-rights  .......... */
 
-.footer-info h4{
+.footer-company-rights h4{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -639,7 +737,7 @@ footer{
 
     margin-bottom: 10px;
 }
-.footer-info p{
+.footer-company-rights p{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -653,21 +751,23 @@ footer{
 
 
 
-/* .......... footer-contact  .......... */
+/* .......... footer-company-contact  .......... */
 
-.footer-contact ul{
+.footer-company-contact ul{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 
     padding: 0px;
 }
-.footer-contact ul li{
+.footer-company-contact ul li{
     list-style: none;
 
     margin-left: 5px;
     margin-right: 5px;
 }
+
+/* __________ footer-Endpart end __________ */
 
 
 

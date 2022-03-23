@@ -1,0 +1,30 @@
+
+/* ------------------------------------------------------------      
+            1st Section : ProductsCollection
+------------------------------------------------------------ */
+
+.sectiontitle-productscollection{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.sectiontitle-productscollection h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+
+    color: #3A3A3A;
+
+    margin-top: 0px;
+}
+
+
+
+/* .......... products start .......... */
+
+
+
+/* __________ products end __________ */
