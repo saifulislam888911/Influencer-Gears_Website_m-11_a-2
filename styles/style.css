@@ -219,10 +219,10 @@ nav li a{
 
 /* .......... navPortion_2 .......... */
 
-#navPortion_2 ul li{
+#navPortion_2 ul > li{
     margin-right: 34px;
 }
-#navPortion_2 li a{
+#navPortion_2 li > a{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -231,7 +231,7 @@ nav li a{
     color:#3A3A3A;
 }
 
-#navPortion_2 ul li:hover{
+#navPortion_2 ul > li:hover{
     background-color: rgba(211, 211, 211, 0.253);
     border-radius: 10px;
 
@@ -239,6 +239,59 @@ nav li a{
 
     transition: padding 1s ease-out;
 }
+
+
+
+/* .......... navPortion_2 : mega-menu start .......... */
+
+#navPortion_2 ul > li > .dropdown{
+    display: none;
+
+    position: absolute;
+    z-index: 1;    /* [Note : for displaying mega-menu Bar over main camera image ; because both them are position :absolute. */    
+
+    width: 460px;
+
+    background-color: #d6dce6de;
+    border-radius: 10px;
+
+    padding-bottom: 20px;
+}
+#navPortion_2 ul > li > .dropdown ul{
+    flex-direction: column;
+}
+#navPortion_2 ul > li > .dropdown ul > li{  
+    margin-top: 4px;
+}
+#navPortion_2 ul > li > .dropdown ul > li > a{  
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+
+    color: #4c4c66de;
+}
+#navPortion_2 ul > li > .dropdown ul > li > a > h4{  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    color:#3A3A3A;
+}
+
+
+
+#navPortion_2 ul > li:hover> .dropdown{
+    display: block;
+}
+#navPortion_2 ul > li:hover > .dropdown.mega-menu{
+    display: grid;
+
+    grid-template-columns: repeat(3,100px);
+
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+/* __________ navPortion_2 : mega-menu end __________ */
 
 
 
@@ -261,8 +314,6 @@ nav li a{
 .prebook_info{
     margin-left: 5%;
     margin-right: 5%;
-  
-    /* padding: 3.5%; */
 }
 .prebook_info h1{
     font-family: 'Poppins', sans-serif;
@@ -693,6 +744,8 @@ hr{
     background-image: linear-gradient(#538FFB,#5B54FA);
     border: 0px;
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 /* __________ footer-subscribe-panel end __________ */
